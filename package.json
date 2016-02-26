@@ -18,7 +18,7 @@
     "localforage": "^1.3.0",
     "postcss-loader": "^0.8.0",
     "script-loader": "^0.6.1",
-    "standard": "^5.4.1",
+    "semistandard": "^7.0.5",
     "style-loader": "^0.13.0",
     "stylus-loader": "^1.4.2",
     "surge": "^0.17.3",
@@ -37,11 +37,11 @@
   "scripts": {
     "build": "webpack",
     "deploy": "surge -p public -d feather.surge.sh",
-    "lint": "standard",
+    "lint": "semistandard",
     "start": "webpack-dev-server",
     "yolo": "npm run build && npm run deploy"
   },
-  "standard": {
+  "semistandard": {
     "globals": [
       "React"
     ]

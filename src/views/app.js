@@ -1,14 +1,14 @@
-import home from './home'
-import about from './about'
+import home from './home';
+import about from './about';
 
 export default (state) => {
-  const { url } = state
-  let page
+  const { url } = state;
+  let page;
 
   if (url === '/') {
-    page = home(state)
+    page = home(state);
   } else if (url === '/about') {
-    page = about()
+    page = about();
   }
 
   return (
@@ -19,5 +19,5 @@ export default (state) => {
       </nav>
       {page}
     </main>
-  )
-}
+  );
+};

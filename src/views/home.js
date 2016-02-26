@@ -5,4 +5,4 @@ export default ({count}) => (
     <span> {count} </span>
     <button data-click={{type: 'increment'}}> + </button>
   </div>
-)
+);
